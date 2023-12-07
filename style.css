@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  color: #a54328;
+  font-family: Source Serif Pro;
+  font-size: 1.4rem;
+  font-weight: 400;
+  leading-trim: both;
+  text-edge: cap;
+
+  max-width: 30rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+img {
+  width: 30rem;
+  height: 18rem;
+  margin: 4.6rem auto 4.6rem auto;
+}
+
+.recipe p,
+.ingredients h2 {
+  margin-bottom: 3.6rem;
+}
+
+.recipe,
+.ingredients {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients ul,
+.ingredients ol {
+  margin-bottom: 1.6rem;
+}
+
+.ingredients strong {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: start;
+  align-items: start;
+}
+
+@media (min-width: 50rem) {
+  body {
+    max-width: 120rem;
+  }
+
+  img {
+    width: 40rem;
+    height: 24rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    gap: 1.9rem;
+  }
+}
